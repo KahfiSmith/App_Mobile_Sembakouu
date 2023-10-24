@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/firstFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home"/>
+    <item
+        android:id="@+id/secondFragment"
+        android:title="Transaksi"
+        android:icon="@drawable/ic_baseline_playlist_add_check_24"/>
+    <item
+        android:id="@+id/thirdFragment"
+        android:title="History"
+        android:icon="@drawable/ic_baseline_history_24"/>
+    <item
+        android:id="@+id/fourthFragment"
+        android:title="Pengaturan"
+        android:icon="@drawable/ic_baseline_settings"/>
+</menu>

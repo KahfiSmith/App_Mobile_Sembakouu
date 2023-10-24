@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swap1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Setting"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relast1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/yelow2"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/ic_prof"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_account_box_24" />
+
+            <TextView
+                android:id="@+id/nama_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingTop="8dp"
+                android:text="Nama Pembeli"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toRightOf="@id/ic_prof"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/username_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Username Pembeli"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toRightOf="@id/ic_prof"
+                app:layout_constraintTop_toBottomOf="@id/nama_setting" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/relast1"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_akun"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/white"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/btn_akun"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/transparant"/>
+        <ImageView
+            android:id="@+id/ic_akun"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_person"/>
+        <TextView
+            android:id="@+id/txt_akun"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="65dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/grey"
+            android:text="Akun"
+            android:textSize="18sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_kmn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="7dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/card_akun"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/btn_kmn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/transparant"/>
+        <ImageView
+            android:id="@+id/ic_kmn"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_key"/>
+        <TextView
+            android:id="@+id/txt_kmn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="65dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/grey"
+            android:text="Reset Password"
+            android:textSize="18sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_as"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="7dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/card_kmn"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/btn_apk"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/transparant"/>
+        <ImageView
+            android:id="@+id/ic_as"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_baseline_info"/>
+        <TextView
+            android:id="@+id/txt_as"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="65dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/grey"
+            android:text="Info Aplikasi"
+            android:textSize="18sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_logout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="7dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/card_as"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/transparant"/>
+        <ImageView
+            android:id="@+id/ic_logout"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_baseline_logout_24"/>
+        <TextView
+            android:id="@+id/txt_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="65dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/grey"
+            android:text="Log out"
+            android:textSize="18sp"/>
+    </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

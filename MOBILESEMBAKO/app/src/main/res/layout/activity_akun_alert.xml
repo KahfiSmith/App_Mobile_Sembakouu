@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".Activity.akun_alert">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="528dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewEditAkun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                app:cardElevation="0dp"
+                android:background="@color/yelow"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/tt_akun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Akun"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textColor="@color/grey"
+                    android:layout_marginBottom="0dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    tools:ignore="MissingConstraints" />
+
+                <LinearLayout
+                    android:id="@+id/form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="MissingConstraints">
+
+                    <TextView
+                        android:id="@+id/alert_username1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="Username"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="14sp"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/alert_username2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:hint="Username"
+                        android:maxLines="1"
+                        android:background="@drawable/radius_alert"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="16sp"
+                        android:textColor="@color/grey"
+                        android:layout_marginBottom="10dp" />
+
+                    <TextView
+                        android:id="@+id/alert_nama1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="Nama Lengkap"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="14sp"
+                        android:textColor="@color/grey" />
+
+                    <EditText
+                        android:id="@+id/alert_nama2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:hint="Nama Lengkap"
+                        android:maxLines="1"
+                        android:background="@drawable/radius_alert"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="16sp"
+                        android:textColor="@color/grey"
+                        android:layout_marginBottom="10dp" />
+
+                    <TextView
+                        android:id="@+id/alert_alamat1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="Alamat"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="14sp"
+                        android:textColor="@color/grey" />
+
+                    <EditText
+                        android:id="@+id/alert_alamat2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:hint="Alamat"
+                        android:maxLines="3"
+                        android:lines="3"
+                        android:background="@drawable/radius_alert"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="16sp"
+                        android:textColor="@color/grey"
+                        android:layout_marginBottom="10dp" />
+
+                    <TextView
+                        android:id="@+id/alert_nohp1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="Nomer Telepon"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="14sp"
+                        android:textColor="@color/grey" />
+
+                    <EditText
+                        android:id="@+id/alert_nohp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:hint="Nomer Telepon"
+                        android:maxLines="1"
+                        android:background="@drawable/radius_alert"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="16sp"
+                        android:textColor="@color/grey"
+                        android:layout_marginBottom="10dp" />
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="450dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        app:layout_constraintTop_toBottomOf="@id/form"
+                        android:id="@+id/alert_btn_konfirmasi"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/login"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_gravity="left"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:textAllCaps="false"
+                        android:text="Konfirmasi"
+                        tools:ignore="MissingConstraints,NotSibling" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/alert_btn_cancel"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left"
+                        android:background="@drawable/login"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Batal"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintRight_toRightOf="parent"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteY="0dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+  </androidx.constraintlayout.widget.ConstraintLayout>

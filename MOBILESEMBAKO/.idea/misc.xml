@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/SEMBAKOMOBILE/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.125" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/SEMBAKOMOBILE/app/src/main/res/drawable/ic_baseline_done_24.xml" value="0.1435" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/SEMBAKOMOBILE/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.135" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/SEMBAKOMOBILE/app/src/main/res/drawable/login.xml" value="0.1" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/SEMBAKOMOBILE/app/src/main/res/drawable/radius.xml" value="0.1" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/SEMBAKOMOBILE/app/src/main/res/drawable/register.xml" value="0.1" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/SEMBAKOMOBILE/app/src/main/res/layout/activity_login.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/SEMBAKOMOBILE/app/src/main/res/layout/activity_lupa_passoword.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/SEMBAKOMOBILE/app/src/main/res/layout/activity_register.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/SEMBAKOMOBILE/app/src/main/res/layout/activity_register_berhasil.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/SEMBAKOMOBILE/app/src/main/res/layout/login.xml" value="0.2" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/SEMBAKOMOBILE/app/src/main/res/layout/register_berhasil.xml" value="0.23125" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/SEMBAKOMOBILE/app/src/main/res/layout/selamat_datang.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/SEMBAKOMOBILE/app/src/main/res/xml/network_security_config.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

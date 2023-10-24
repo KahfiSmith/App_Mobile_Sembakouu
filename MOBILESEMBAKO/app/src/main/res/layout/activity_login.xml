@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activity.login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Login"
+        android:gravity="center"
+        android:textSize="27sp"
+        android:textColor="@color/grey"
+        android:layout_marginBottom="25dp" />
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="14dp">
+
+            <ImageView
+                android:id="@+id/iv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_person" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_email"
+                android:hint=""
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@color/transparant"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:textColor="@color/grey"
+                    android:padding="0dp"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginRight="14dp">
+
+            <ImageView
+                android:id="@+id/iv_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_key" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:backgroundTint="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint=""
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_pass"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@color/transparant"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Password"
+                    android:textColor="@color/grey"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textSize="16sp"
+                    android:padding="0dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lupa_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#686868"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Lupa password?"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnlogin"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_gravity="center"
+        android:text="Login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Belum punya akun?" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnregister"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/register"
+        android:textColor="#FFCB1A"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_gravity="center"
+        android:text="Register" />
+
+</LinearLayout>
